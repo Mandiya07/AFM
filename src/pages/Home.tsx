@@ -1,8 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Droplets, Hammer, Layers, Factory, Users, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import casketHero from '../assets/images/casket_hero_1780108055321.png';
-import manufacturingProcess from '../assets/images/manufacturing_process_1780108145734.png';
+import { DR_IMAGES } from '../images';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -24,7 +23,7 @@ export default function Home() {
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-charcoal-900">
            <img 
-              src={casketHero} 
+              src={DR_IMAGES[5]} 
               alt="Premium Woodworking Craftsmanship" 
               className="w-full h-full object-cover opacity-40 mix-blend-overlay"
            />
@@ -152,7 +151,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-               <img src={manufacturingProcess} alt="Manufacturing process" className="w-full h-full object-cover" />
+               <img src={DR_IMAGES[6]} alt="Manufacturing process" className="w-full h-full object-cover" />
                <div className="absolute inset-0 border-[12px] border-charcoal-900/10 pointer-events-none"></div>
             </motion.div>
           </div>

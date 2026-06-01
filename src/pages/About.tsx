@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import manufacturingProcess from '../assets/images/manufacturing_process_1780108145734.png';
+import { DR_IMAGES } from '../images';
 
 export default function About() {
   return (
@@ -15,7 +15,7 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
         <div>
           <img 
-            src={manufacturingProcess} 
+            src={DR_IMAGES[6]} 
             alt="Craftsmanship" 
             className="w-full h-[500px] object-cover rounded-sm shadow-md"
           />

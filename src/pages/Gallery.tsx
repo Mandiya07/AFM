@@ -1,13 +1,8 @@
 import { motion } from 'motion/react';
-import img1 from '../assets/images/casket_hero_1780108055321.png';
-import img2 from '../assets/images/coffin_oak_1780108071438.png';
-import img3 from '../assets/images/casket_dome_1780108087868.png';
-import img4 from '../assets/images/moulding_wood_1780108104774.png';
-import img5 from '../assets/images/casket_bespoke_1780108126500.png';
-import img6 from '../assets/images/manufacturing_process_1780108145734.png';
+import { DR_IMAGES } from '../images';
 
 export default function Gallery() {
-  const images = [img1, img2, img3, img4, img5, img6];
+  const images = DR_IMAGES.slice(7, 41);
 
   return (
     <div className="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

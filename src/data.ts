@@ -1,9 +1,5 @@
 import { Product, Testimonial, FAQItem } from './types';
-import casketHero from './assets/images/casket_hero_1780108055321.png';
-import coffinOak from './assets/images/coffin_oak_1780108071438.png';
-import casketDome from './assets/images/casket_dome_1780108087868.png';
-import mouldingWood from './assets/images/moulding_wood_1780108104774.png';
-import casketBespoke from './assets/images/casket_bespoke_1780108126500.png';
+import { DR_IMAGES } from './images';
 
 export const products: Product[] = [
   {
@@ -12,7 +8,7 @@ export const products: Product[] = [
     category: 'casket',
     description: 'A masterfully crafted solid mahogany casket with intricate gold-leaf detailing and premium velvet interior.',
     longDescription: 'The Heritage Sovereign represents the pinnacle of AFM craftsmanship. Carved from ethically sourced solid mahogany, this casket features deep, rich wood tones complemented by subtle gold-leaf trim. The interior is hand-upholstered in premium ivory velvet, offering an unparalleled dignified resting place.',
-    image: casketHero,
+    image: DR_IMAGES[0],
     material: 'Solid Mahogany',
     finish: 'High-Gloss Hand-Rubbed Polish',
     features: ['Solid brass swing bar handles', 'Adjustable bed system', 'Memory safe drawer', 'Custom engraving available'],
@@ -23,7 +19,7 @@ export const products: Product[] = [
     name: 'The Century Oak Coffin',
     category: 'coffin',
     description: 'Traditional elegance realized in solid oak with pure brass fittings and a tailored linen interior.',
-    image: coffinOak,
+    image: DR_IMAGES[1],
     material: 'Solid Oak',
     finish: 'Satin Matte',
     features: ['Traditional shape', 'Pure brass handles', 'Linen interior', 'Eco-friendly varnish']
@@ -33,7 +29,7 @@ export const products: Product[] = [
     name: 'Classic Dome Casket',
     category: 'casket',
     description: 'A timeless dome design crafted from cherry wood veneer over a solid hardwood core.',
-    image: casketDome,
+    image: DR_IMAGES[2],
     material: 'Cherry Veneer / Hardwood Core',
     finish: 'Cherry Satin',
     features: ['Dome lid', 'Silver-tone hardware', 'Crepe interior']
@@ -43,7 +39,7 @@ export const products: Product[] = [
     name: 'Regal Crown Moulding',
     category: 'moulding',
     description: 'Intricately carved architectural trim used for finishing premium caskets and custom interiors.',
-    image: mouldingWood,
+    image: DR_IMAGES[3],
     material: 'Pine / Saligna',
     finish: 'Unfinished / Raw'
   },
@@ -52,7 +48,7 @@ export const products: Product[] = [
     name: 'Bespoke Protea Series',
     category: 'bespoke',
     description: 'Custom-designed caskets featuring hand-carved South African flora motifs.',
-    image: casketBespoke,
+    image: DR_IMAGES[4],
     material: 'Kiaat / African Teak',
     finish: 'Natural Oil'
   }

@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Scissors, Edit3, Image as ImageIcon, Box } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import casketBespoke from '../assets/images/casket_bespoke_1780108126500.png';
+import { DR_IMAGES } from '../images';
 
 export default function CustomCaskets() {
   const steps = [
@@ -42,7 +42,7 @@ export default function CustomCaskets() {
         </div>
         <div className="order-1 lg:order-2">
            <img 
-              src={casketBespoke} 
+              src={DR_IMAGES[4]} 
               alt="Bespoke Casket Details" 
               className="w-full h-[600px] object-cover rounded-sm shadow-md"
            />
